@@ -59,3 +59,4 @@ After the validation conflict the Ping object is sent back to *edit*.
 Edit is supposed to display the object and request valid input.
 When it tries to display the *pongs* relationship no session is available.
 A session is needed to retrieve the associated Pongs.
+Integer validation is done on the client, invalid input never reaches the controller.
