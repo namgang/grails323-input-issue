@@ -27,7 +27,7 @@ Either modify it to suit your needs, or follow your own conventions.
 
 ## Test Run
 ```bash
-. setup.sh
+. setup.sh  # Only if needed
 grails
 grails> clean
 grails> run-app
