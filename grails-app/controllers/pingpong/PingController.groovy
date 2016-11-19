@@ -47,11 +47,13 @@ class PingController {
     }
 
     def edit(Ping ping) {
+        if (log.debugEnabled) log.debug "--PING EDIT--"
         respond ping
     }
 
     @Transactional
     def update(Ping ping) {
+        if (log.debugEnabled) log.debug "--PING UPDATE--"
         if (ping == null) {
             transactionStatus.setRollbackOnly()
             notFound()
